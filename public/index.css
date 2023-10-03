@@ -23,3 +23,40 @@ body {
     background-color: black;
     position: absolute;
 }
+
+.scale-target {
+    animation-name: scale-target;
+    animation-duration: 1s;
+}
+
+@keyframes scale-target {
+    0% {
+        transform: scale(0.1);
+    }
+    100% {
+        transform: scale(1.0);
+    }
+}
+
+.crosshair {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+}
+
+.verticalLine {
+    height: 1rem;
+    width: 0.2rem;
+    position: absolute;
+    background-color: red;
+}
+
+.horizontalLine {
+    height: 0.2rem;
+    width: 1rem;
+    background-color: red;
+    position: relative;
+    top: 0.4rem;
+    left: -0.4rem;
+}
